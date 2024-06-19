@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "F1-Regular";
+  src: url("fonts/Formula1-Regular-1.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("fonts/Formula1-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-Web";
+  src: url("fonts/Formula1-Bold_web.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-4";
+  src: url("fonts/Formula1-Bold-4.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Wide";
+  src: url("fonts/Formula1-Wide.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Italic";
+  src: url("fonts/Formula1-Italic.ttf") format("woff2");
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 6.5rem;
+  padding-inline-start: 1rem;
+}
+
+.span-clasificacion {
+  font-family: "F1-Bold-Web";
+  color: black;
+  font-size: 2rem;
+  padding: 0.75rem;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom-right-radius: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom-right-radius: 30px;
+}
+
+.grid-item:hover {
+  padding: 50px;
+  text-align: center;
+  border-bottom: 5px solid #e10600;
+  border-right: 5px solid #e10600;
+  border-bottom-right-radius: 30px;
+  box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.grid-item:nth-child(1):hover {
+  border-bottom: 5px solid gold;
+  border-right: 5px solid gold;
+}
+
+.grid-item:nth-child(2):hover {
+  border-bottom: 5px solid rgb(106, 106, 106);
+  border-right: 5px solid rgb(106, 106, 106);
+}
+.grid-item:nth-child(3):hover {
+  border-bottom: 5px solid #cd7f32;
+  border-right: 5px solid #cd7f32;
+}
+
+.points-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.driver-grid {
+  display: flex;
+  height: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driver-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+}
+
+#position {
+  font-family: "F1-Bold-4";
+  font-size: 2.5rem;
+}
+
+#points-current {
+  font-family: "F1-Wide";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#first-name {
+  font-family: "F1-Regular";
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+#last-name {
+  font-family: "F1-Wide";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.constructor-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.constructor-image {
+  width: 70%;
+  max-height: 4.5rem;
+}
+
+#constructor {
+  font-family: "F1-Regular";
+  font-size: 0.5rem;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.number-image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#driver-image-number {
+  width: 80%;
+}
+
+#driver-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.driver-image-grid {
+  display: grid;
+  height: 50%;
+  grid-template-columns: 1fr 1fr;
+}

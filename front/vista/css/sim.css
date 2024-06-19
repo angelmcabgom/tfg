@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "F1-Regular";
+  src: url("fonts/Formula1-Regular-1.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("fonts/Formula1-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-Web";
+  src: url("fonts/Formula1-Bold_web.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-4";
+  src: url("fonts/Formula1-Bold-4.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Wide";
+  src: url("fonts/Formula1-Wide.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Italic";
+  src: url("fonts/Formula1-Italic.ttf") format("woff2");
+}
+
+.hidden {
+  display: none;
+}
+.segment-square {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 1px;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.purple {
+  background-color: purple;
+}
+@keyframes flashYellow {
+  0% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.flash {
+  animation: flashYellow 1s;
+}
+
+.pitting {
+  background-color: red;
+}
+
+table {
+  color: white;
+  background-color: #23222b;
+  margin: 1rem;
+  font-family: "F1-Regular";
+  font-size: 0.7rem;
+}
+
+td {
+  padding: 0.2rem;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'F1-Regular';
+}

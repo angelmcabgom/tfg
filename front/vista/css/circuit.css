@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "F1-Regular";
+  src: url("fonts/Formula1-Regular-1.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("fonts/Formula1-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-Web";
+  src: url("fonts/Formula1-Bold_web.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-4";
+  src: url("fonts/Formula1-Bold-4.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Wide";
+  src: url("fonts/Formula1-Wide.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Italic";
+  src: url("fonts/Formula1-Italic.ttf") format("woff2");
+}
+
+.location-map-container {
+  display: flex;
+  justify-content: space-between;
+  max-height: 55vh;
+  background-color: #e9e9e9;
+  padding: 2rem;
+}
+
+.track-name {
+  font-family: "F1-Black";
+  font-size: 3rem;
+}
+
+.number-drivers-races {
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+  width: 55%;
+  margin-top: 3rem;
+  font-family: "F1-Regular";
+  font-size: 0.9rem;
+}
+
+.num-content {
+  font-size: 1.25rem;
+  font-family: "F1-Bold-Web";
+}
+
+.number-drivers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 45%;
+  border-bottom: 4px solid grey;
+  border-left: 4px solid grey;
+  border-bottom-left-radius: 30px;
+}
+
+.number-races {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 45%;
+  border-bottom: 4px solid grey;
+  border-left: 4px solid grey;
+  border-bottom-left-radius: 30px;
+}
+
+.circuit-info-container {
+  display: flex;
+  height: 80vh;
+  margin: 3rem 3rem;
+  padding: 2rem;
+  border-top: 8px solid black;
+  border-right: 8px solid black;
+  border-top-right-radius: 30px;
+}
+
+.track-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.track-info-grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 5rem 2rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 4px solid grey;
+  border-left: 4px solid grey;
+  border-bottom-left-radius: 30px;
+}
+
+.grid-item-title {
+  font-family: "F1-Regular";
+}
+
+.grid-item-content {
+  font-family: "F1-Black";
+  font-size: 1.75rem;
+}
+
+.fastest-lap-holder {
+  font-family: "F1-Regular";
+  font-size: 0.75rem;
+}
+
+.track-map-container img {
+  width: 100%;
+}
+
+.track-location {
+  font-family: "F1-Italic";
+  font-size: 1.5rem;
+}
+
+.location-container {
+  width: 50%;
+}
+
+.chartdiv {
+  width: 50%;
+}
+
+.load {
+  position: absolute;
+  width: 10%;
+  top: 30;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.load img {
+  width: 10%;
+}

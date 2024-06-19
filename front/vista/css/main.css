@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@font-face {
+  font-family: "F1-Regular";
+  src: url("fonts/Formula1-Regular-1.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("fonts/Formula1-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-Web";
+  src: url("fonts/Formula1-Bold_web.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-4";
+  src: url("fonts/Formula1-Bold-4.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Wide";
+  src: url("fonts/Formula1-Wide.ttf") format("woff2");
+}
+
+/**/
+html {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+/*Estilo del body para mantener el footer en el pie de la pagina*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*Ajustes navbar*/
+
+.navbar-container-principal {
+  padding: 0em;
+  background-color: #e10600;
+}
+
+/*Estilos del logo "TrekWikia"*/
+div#tituloCabezera {
+  font-family: "Mulish", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 1000;
+  color: white;
+  padding-bottom: 0.2em;
+}
+
+/*Estilos de la barra de busqueda*/
+#logo {
+  padding: 0px;
+  border: 0px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150%;
+}
+
+.search-container span {
+  margin-left: 0.5rem;
+}
+
+.custom-search-bar {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #d9d9d9;
+}
+
+/*Estilo de la barra de busqueda cuando se hace clic*/
+.custom-search-bar:focus {
+  outline: none;
+  background-color: white !important;
+}
+
+.search-container:focus-within {
+  background-color: white !important;
+}
+
+.custom-search-bar:focus {
+  box-shadow: none;
+}
+
+
+.custom-navbar-nav {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.custom-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1%;
+  height: 3.75rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  transition: background-color 0.3s ease;
+  transition: box-shadow 0.2s ease;
+}
+
+.custom-nav-item:hover {
+  box-shadow: 0px 1px 8px black;
+  background-color: #15151e;
+}
+
+.explore-link {
+  font-family: "F1-Italic", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.explore-link:hover,
+.explore-link:active,
+.explore-link:focus {
+  text-decoration: underline;
+  color: white;
+}
+
+/*Estilos del dropdown menu*/
+.dropdown-menu {
+  border: 1px solid #555;
+  font-size: 16px;
+  padding: 15px;
+  padding-left: 25px;
+  width: 500%;
+  box-shadow: 0px 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: initial;
+  color: #8b4513;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown-item:hover a {
+  text-decoration: underline;
+}
+
+.custom-explorar-dropdown {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/*Camvio de color cuando el dropdown esta activo*/
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #5b2600;
+}
+
+/*Estilos de headerFalseLogin*/
+/*Estilos de botones login y register*/
+
+.custom-login {
+  display: flex;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.custom-login a {
+  font-family: "F1-Regular";
+  color: #e10600;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 2rem;
+}
+
+.custom-login:hover {
+  background-color: #b00600;
+}
+
+.custom-login a:hover {
+  color: white;
+}
+/**/
+
+.custom-register {
+  display: flex;
+  background-color: #15151e;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.custom-register a {
+  color: white;
+  font-family: "F1-Regular";
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 2rem;
+}
+
+.custom-register:hover {
+  background-color: #37393f;
+}
+
+.custom-register a:hover {
+  color: white;
+}
+
+/*Estilos de headerTrueLogin*/
+
+#imagenPerfil {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.2rem;
+  border: 2px solid #d2d2d4;
+}
+
+#imagenPerfil:hover {
+  border: 2px solid #15151e;
+}
+
+/*Estilos de headerTrueLoginOrg*/
+/*Estilos del nav-link "organizar carreras"*/
+.organizar-link {
+  color: #8b4513;
+}
+
+.organizar-link:hover {
+  text-decoration: underline;
+  color: #8b4513;
+}
+
+/*Estilos del footer*/
+
+footer {
+  display: flex;
+  background-color: #15151e;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer span {
+  order: 1;
+  font-family: "F1-Bold-Web";
+  margin-left: 1rem;
+  width: 80%;
+}
+
+footer .container-imagenes {
+  order: 2;
+  margin-right: 1rem;
+}
+
+.container-imagenes #segundaImagen {
+  margin-left: 1rem;
+}
+
+/*Estilos footer para dispositivos pantalla mas pequeña*/
+@media screen and (min-width: 0px) and (max-width: 560px) {
+  footer {
+    flex-direction: column;
+    height: 13vh;
+  }
+
+  footer .container-imagenes {
+    margin-right: 0;
+    align-self: flex-end;
+    margin: 0.5rem;
+  }
+
+  footer span {
+    font-size: 0.75rem;
+    width: 65%;
+    font-weight: bold;
+    order: 2;
+    margin: 0.5rem;
+    align-self: flex-start;
+  }
+}
+
+/*Estilos del menu dropdown del perfil*/
+
+.custom-perfil-dropdown {
+  width: 20%;
+  padding: 0px;
+  box-shadow: 0px 0px 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.custom-perfil-dropdown li {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.custom-perfil-dropdown li:last-child {
+  width: 100%;
+  border-bottom: none;
+}
+
+.custom-perfil-dropdown li:hover {
+  text-decoration: underline;
+}
+.custom-dropdown .dropdown-toggle::after {
+  display: none;
+}
+.custom-dropdown .dropdown-menu {
+  top: 3.3rem;
+}
+
+.dropdown-item-perfil {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item-perfil span {
+  margin-right: 0.5rem;
+}
+
+.custom-perfil-dropdown li:hover {
+  text-decoration: none;
+  background-color: #ebebeb;
+  border-radius: 0.2rem;
+}
+
+.custom-perfil-dropdown li a:hover {
+  color: black;
+}
+
+.cerrar-sesion {
+  color: red;
+}
+
+.cerrar-sesion:hover {
+  color: red !important; /* Si no se usa important da problemas de especificidad */
+}
+
+.material-symbols-outlined-perfil {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 12;
+}
+
+.material-symbols-outlined-perfil-conf {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 12;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 12;
+}

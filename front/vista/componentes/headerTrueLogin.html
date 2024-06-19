@@ -1,0 +1,91 @@
+<body>
+  <!-- header -->
+  <nav class="navbar-container-principal navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <!-- Logo y nombre navbarrr -->
+      <a
+        href="../main"
+        class="btn custom-link d-flex align-items-center"
+        id="logo"
+      >
+        <div id="tituloCabezera" class="mx-2 my-0">F1DB</div>
+      </a>
+      <!-- Items navbarr -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="custom-navbar-nav navbar-nav align-items-center">
+          <!-- <li class="custom-nav-item-search nav-item mx-5">
+            <div class="search-container">
+              <span class="material-symbols-outlined">search</span>
+              <input
+                class="custom-search-bar form-control"
+                type="search"
+                placeholder="Buscar carreras"
+                aria-label="Search"
+              />
+            </div>
+          </li> -->
+          <li class="custom-nav-item dropdown">
+            <a
+              class="explore-link nav-link"
+              href="../clasificacion/"
+              id="navbarDropdown"
+              role="button"
+            >
+              Clasificacion
+            </a>
+          </li>
+          <li class="custom-nav-item dropdown">
+            <a
+              class="explore-link nav-link"
+              href="../sim/"
+              id="navbarDropdown"
+              role="button"
+            >
+              Simulador
+            </a>
+          </li>
+
+          <!-- Dropdown menu -->
+          <li class="nav-item ms-auto mx-3 dropdown custom-dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="" id="imagenPerfil" />
+            </a>
+            <ul class="custom-perfil-dropdown dropdown-menu dropdown-menu-end">
+              <!-- Opciones del dropdown -->
+              <li>
+                <a href="#" class="dropdown-item-perfil dropdown-item">
+                  <span class="material-symbols-outlined"> person </span>
+                  Tu perfil
+                </a>
+              </li>
+              <li>
+                <a
+                  href="configUsuario.php"
+                  class="dropdown-item-perfil dropdown-item"
+                >
+                  <span class="material-symbols-outlined"> settings </span>
+                  Configuracion
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../../controlador/logout.html"
+                  class="dropdown-item-perfil dropdown-item cerrar-sesion"
+                >
+                  <span class="material-symbols-outlined"> logout </span>
+                  Cerrar sesion
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "F1-Italic";
+  src: url("fonts/Formula1-Italic.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Regular";
+  src: url("fonts/Formula1-Regular-1.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("fonts/Formula1-Black.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-Web";
+  src: url("fonts/Formula1-Bold_web.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Bold-4";
+  src: url("fonts/Formula1-Bold-4.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "F1-Wide";
+  src: url("fonts/Formula1-Wide.ttf") format("woff2");
+}
+
+/*Estilos de next-race*/
+
+.next-race {
+  display: flex;
+  text-shadow: 0px 0px 13px #1e1f20;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center 75%;
+  width: 100vw;
+  height: 40vh;
+}
+
+.next-race-track {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.next-race-track img {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.race-track {
+  background-image: url("assets/images/miami_track.png");
+}
+
+.next-race-text {
+  font-family: "F1-Bold-Web";
+  text-shadow: 0px 0px 13px #1e1f20;
+  font-size: 2.25rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.next-race-text-track {
+  font-family: "F1-Bold-Web";
+  margin-right: 2rem;
+  font-size: 2.75rem;
+  color: white;
+}
+
+.next-race::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Schedule */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  padding: 50px;
+  text-align: center;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-top-right-radius: 30px;
+}
+
+.grid-item:hover {
+  padding: 50px;
+  text-align: center;
+  border-top: 5px solid #e10600;
+  border-right: 5px solid #e10600;
+  border-top-right-radius: 30px;
+  box-shadow: 6px -6px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#track-schedule-h2 {
+  font-family: "F1-Bold-4";
+  font-size: 1.75rem;
+}
+
+#track-schedule-h3 {
+  font-family: "F1-Wide";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#track-schedule-image {
+  height: 10rem;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.navbar-container-secundario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15151e;
+  font-family: "F1-Regular";
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
